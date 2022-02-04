@@ -1,0 +1,7 @@
+
+.program leds
+.wrap_target
+    pull ; Loads 32-bit value from TX FIFO to OSR
+    out pins, 3 ; Sets pin to output
+.wrap
+

@@ -1,0 +1,4 @@
+.program buttons
+.wrap_target
+    in pins, 2 ;Moves 2-bit from pins to ISR
+.wrap
