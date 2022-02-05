@@ -26,7 +26,3 @@ void buttons_program_init(PIO pio, uint &sm, uint &offset, uint pin, uint pin_co
 
     pio_sm_init(pio, sm, offset, &c);
 }
-
-uint32_t get_button_state(PIO pio, uint sm) {
-    return pio_sm_get(pio, sm);
-}

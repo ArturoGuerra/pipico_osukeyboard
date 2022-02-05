@@ -18,7 +18,6 @@ add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME}
         PRIVATE
         main.cpp
-        leds.cpp
         buttons.cpp
         usb_hid.cpp
         usb_descriptors.c)
@@ -33,7 +32,6 @@ target_link_libraries(${PROJECT_NAME}
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 
 pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/buttons.pio)
-pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/leds.pio)
 
 pico_enable_stdio_usb(${PROJECT_NAME} 0)
 pico_enable_stdio_uart(${PROJECT_NAME} 1)

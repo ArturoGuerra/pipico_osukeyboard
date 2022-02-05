@@ -11,6 +11,4 @@
 
 void buttons_program_init(PIO pio, uint &sm, uint &offset, uint pin, uint pin_count);
 
-uint32_t get_button_state(PIO pio, uint sm);
-
 #endif // _BUTTON_H_
